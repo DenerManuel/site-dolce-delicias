@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dolce Delícias</title>
+  </head>
+  <body>
+    <header>
+      <div class="container_logo-header">
+        <img
+          src="img/dolce-delicias-logo.png"
+          alt="Dolce Delícias Logo - Header"
+          class="logo-header"
+        />
+      </div>
+      <button class="hamburguer" id="botaoMenu" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav>
+        <ul class="menu-navegacao" id="menu">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#nossa-historia">Nossa História</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#unidades">Unidades</a></li>
+          <li><a href="#encomendas">Encomendas</a></li>
+          <li><a href="#horarios">Horários</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero secoes-principais">
+        <div class="container hero-grid">
+          <div class="hero-texto">
+            <img
+              src="img/dolce-delicias-logo.png"
+              alt="Dolce Delícias Logo - Hero"
+              class="logo-hero"
+            />
+            <span class="descricao">📍 Feito com amor, em Toledo.</span>
+            <h1>Doces e Salgados Artesanais com Receita de Família</h1>
+            <h2>
+              Brigadeiros, salgadinhos, congelados e kits para festa — sempre
+              fresquinhos, com entrega em toda Toledo.
+            </h2>
+            <button>Quero fazer um pedido pelo WhatsApp</button>
+            <span class="ver-produtos">Ver o cardápio ↓</span>
+            <div class="tags">
+              <span class="tag">🍫 Artesanal</span>
+              <span class="tag">🚚 Entrega em Toledo</span>
+              <span class="tag">💬 Pedido pelo WhatsApp</span>
+              <span class="tag">🎉 Kits de Festa</span>
+            </div>
+          </div>
+          <div class="container_foto-produtos">
+            <img
+              src="img/foto-hero.webp"
+              alt="Proprietária da Dolce Delícias sorrindo enquanto apresenta os produtos artesanais"
+              class="foto-produtos"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="nossa-historia" class="nossa-historia secoes-principais">
+        <div class="container nossa-historia-container">
+          <div class="img-nossa-historia">
+            <img
+              src="img/imagem-equipe.webp"
+              alt="[Foto da cozinha ou da equipe]"
+              class="foto-cozinha"
+            />
+          </div>
+          <div class="nossa-historia-texto">
+            <span class="tag-titulo">NOSSA HISTÓRIA</span>
+            <h1 class="secao-titulo">Uma história feita de sabor</h1>
+
+            <p class="breve-descrição">
+              Para quem nos conhece e nos acompanha, provavelmente sabe como a
+              Dolce Delícias começou e como se tornou referência em lanches
+              escolares e salgados para festas. Tudo começou devido a uma
+              necessidade financeira e a dificuldade de fazer nossa filha comer.
+              Começamos com pães caseiros, mini pizzas e salgadinhos fritos e
+              assados para festas, com receitas caseiras deliciosas passadas de
+              geração em geração que nos acompanham até hoje.
+            </p>
+
+            <p class="breve-descrição">
+              Surgiu em um momento difícil, mas nos ensinou a sermos
+              persistentes. Graças ao amor e carinho que dedicamos às nossas
+              receitas, os produtos foram sendo aceitos cada vez mais. As
+              encomendas que eram pequenas começaram a aumentar, e logo
+              precisamos mudar a produção para uma área maior e mais
+              estruturada. Com a expansão vieram novas oportunidades:
+              especializamo-nos em lanches infantis para educação infantil,
+              depois em cantinas escolares e, mais recentemente, em refeições
+              escolares.
+            </p>
+
+            <p class="breve-descrição">
+              Hoje vemos uma empresa sólida, com vários pontos de venda, equipe
+              formada e nome reconhecido no mercado. Mas quem conhece a história
+              sabe: por trás de cada fornada está a alma de quem não teve medo
+              de começar pequeno.
+            </p>
+
+            <span class="texto-destacado">
+              "Por trás de cada fornada está a alma de quem não teve medo de
+              começar pequeno, de ouvir 'não', de enfrentar o sol, a chuva e o
+              cansaço — e mesmo assim, seguiu em frente."
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="produtos" class="produtos secoes-principais">
+        <div class="container produtos-container">
+          <div class="produtos-header">
+            <span class="tag-titulo">NOSSOS PRODUTOS</span>
+            <h1 class="secao-titulo">Escolha o seu favorito</h1>
+            <span class="subtitulo"
+              >Feitos com ingredientes selecionados para a sua mesa.</span
+            >
+          </div>
+          <div class="filtros-container">
+            <button class="filtro-botao active" data-filtro="todos">
+              Todos
+            </button>
+            <button class="filtro-botao" data-filtro="doces">Doces</button>
+            <button class="filtro-botao" data-filtro="salgados">
+              Salgados
+            </button>
+            <button class="filtro-botao" data-filtro="lanches">Lanches</button>
+            <button class="filtro-botao" data-filtro="bebidas">Bebidas</button>
+            <button class="filtro-botao" data-filtro="kits">
+              Kits para Festa
+            </button>
+          </div>
+
+          <div class="cards-container">
+            <div class="card card-destaque" data-categoria="doces">
+              <span class="selo-mais-pedido">⭐ O queridinho</span>
+              <div class="imagem-container">
+                <img
+                  src="img/produtos/brigadeiro-gourmet.jpg"
+                  alt="[Foto do Brigadeiro]"
+                />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Brigadeiro Gourmet</span>
+                <span class="produto-descricao">
+                  Brigadeiro recheado com Nutella e granulado belga
+                </span>
+                <span class="produto-preco">R$ 6,50 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card card-destaque" data-categoria="salgados">
+              <span class="selo-mais-pedido">⭐ O queridinho</span>
+              <div class="imagem-container">
+                <img
+                  src="img/produtos/coxinha-frango.jpg"
+                  alt="[Foto da Coxinha]"
+                />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Coxinha</span>
+                <span class="produto-descricao">
+                  Massa crocante com frango cremoso e catupiry
+                </span>
+                <span class="produto-preco">R$ 8,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="salgados">
+              <div class="imagem-container">
+                <img src="img/produtos/pastel.jpg" alt="[Foto de Pastel]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Pastel</span>
+                <span class="produto-preco">R$ 15,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="lanches">
+              <div class="imagem-container">
+                <img
+                  src="img/produtos/assado-calabresa.jpg"
+                  alt="[Foto de Misto Simples]"
+                />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Assado de Calabresa</span>
+                <span class="produto-descricao"
+                  >Pão, requeijão, queijo e presunto</span
+                >
+                <span class="produto-preco">R$ 8,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="bebidas">
+              <div class="imagem-container">
+                <img src="" alt="[Foto de Café Expresso]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Café Expresso</span>
+                <span class="produto-preco">R$ 6,99 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <!-- PENDÊNCIA: este card une 'Cento de Salgados (100un)' e 'Salgados Fritos' do material do cliente, que pareciam ser o mesmo item (mesmo preço) — confirmar -->
+            <div class="card card-destaque" data-categoria="kits">
+              <span class="selo-mais-pedido">⭐ O queridinho</span>
+              <div class="imagem-container">
+                <img
+                  src="img/produtos/kit-salgados.jpg"
+                  alt="[Foto de Kit de Salgados Fritos Sortidos]"
+                />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Kit Salgados Fritos (Sortido)</span>
+                <span class="produto-descricao"
+                  >Mix de coxinha, bolinha de queijo, pastel de carne, palitinho
+                  de carne, enroladinho de salsicha, trouxinha de presunto e
+                  queijo e quibe</span
+                >
+                <span class="produto-preco">R$ 85,00 / 100 unidades</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="doces">
+              <div class="imagem-container">
+                <img src="" alt="[Foto de Fatia de Bolo]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Fatia de Bolo</span>
+                <span class="produto-preco">R$ 4,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="salgados">
+              <div class="imagem-container">
+                <img
+                  src="img/produtos/esfilha-frango.jpg"
+                  alt="[Foto de Esfiha de Frango]"
+                />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Esfiha de Frango</span>
+                <span class="produto-preco">R$ 9,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="lanches">
+              <div class="imagem-container">
+                <img src="" alt="[Foto de Hambúrguer Duplo]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Hambúrguer Duplo</span>
+                <span class="produto-preco">R$ 16,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="bebidas">
+              <div class="imagem-container">
+                <img src="" alt="[Foto de Suco de Morango]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Suco de Morango</span>
+                <span class="produto-preco">R$ 8,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="kits">
+              <div class="imagem-container">
+                <img
+                  src="img/produtos/mini-pizza.jpg"
+                  alt="[Foto de Mini Pizza]"
+                />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Mini Pizza</span>
+                <span class="produto-preco">R$ 220,00 / 100 unidades</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="doces">
+              <div class="imagem-container">
+                <img src="" alt="[Foto de Brownie (Pedaço Grande)]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Brownie (Pedaço Grande)</span>
+                <span class="produto-preco">R$ 12,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="bebidas">
+              <div class="imagem-container">
+                <img src="" alt="[Foto de Coca-Cola Lata]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Coca-Cola Lata</span>
+                <span class="produto-preco">R$ 6,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+            <div class="card" data-categoria="kits">
+              <div class="imagem-container">
+                <img src="" alt="[Foto do Pirulito]" />
+              </div>
+              <div class="produto-informacoes">
+                <span class="produto-nome">Pirulito Colorido</span>
+                <span class="produto-descricao">
+                  Pirulito de chocolate decorado, perfeito para festas
+                </span>
+                <span class="produto-preco">R$ 4,00 / unidade</span>
+              </div>
+              <button class="botao-pedir">
+                <img
+                  src="./img/icone-mensagem.png"
+                  alt="Ícone de Mensagem"
+                />Pedir esse pelo WhatsApp
+              </button>
+            </div>
+          </div>
+          <div class="botao-container">
+            <button class="botao-ver-todos">Ver o cardápio completo</button>
+          </div>
+          <span class="pedidos-especiais"
+            >📦 Não achou o que queria? Fale com a gente pelo WhatsApp.</span
+          >
+        </div>
+      </section>
+
+      <section id="unidades" class="unidades secoes-principais">
+        <div class="container unidades-container">
+          <div class="unidades-header">
+            <span class="tag-titulo">NOSSAS UNIDADES</span>
+            <h1 class="secao-titulo">Escolha a unidade mais perto de você</h1>
+            <span class="subtitulo">Estamos pertinho de você em Toledo.</span>
+          </div>
+
+          <div class="unidades-cards">
+            <div class="unidade-card">
+              <span class="unidade-nome">Unidade Dolce Delicias Alimentos</span>
+              <div class="unidade-mapa">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.2905517777695!2d-53.7358584!3d-24.7169034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3bfe7f74ff1af%3A0x32e517393d9bb5b5!2sDolce%20Delicias%20Alimentos%20%7C%20Salgados%20para%20festas%20%7C!5e0!3m2!1spt-BR!2sbr!4v1782083288827!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <span class="unidade-info"
+                >📍 Rua São João, 7408 - Jardim Gisela, Toledo - PR</span
+              >
+              <!-- <span class="unidade-info">🕘 Seg a Sex, das 7h às 17h</span> -->
+              <button class="botao-unidade">
+                Pedir nesta unidade pelo WhatsApp
+              </button>
+            </div>
+            <div class="unidade-card">
+              <span class="unidade-nome"
+                >Unidade Dolce Delícias Lancheira Feliz</span
+              >
+              <div class="unidade-mapa">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.9095686964865!2d-53.74949780000001!3d-24.7299847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f395989b23a589%3A0xf4a5217758ff30a2!2sDolce%20Del%C3%ADcias%20Lancheira%20Feliz!5e0!3m2!1spt-BR!2sbr!4v1782083411554!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <span class="unidade-info"
+                >📍 Rua Guarani, 2463 - Jardim La Salle, Toledo - PR</span
+              >
+              <!-- <span class="unidade-info">🕘 Seg a Sex, das 9h às 12:30h | 13:30h às 18:30</span> -->
+              <button class="botao-unidade">
+                Pedir nesta unidade pelo WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="encomendas" class="encomendas secoes-principais">
+        <div class="container encomendas-container">
+          <div class="encomendas-header">
+            <span class="tag-titulo">ENCOMENDAS</span>
+            <h1 class="secao-titulo">
+              Como funciona: peça em 4 passos simples
+            </h1>
+          </div>
+          <div class="passos-lista">
+            <div class="passo">
+              <span class="passo-numero">1</span>
+              <div class="passo-texto">
+                <span class="passo-titulo">Escolha seu produto</span>
+                <span class="passo-descricao"
+                  >Dê uma olhada no cardápio ali em cima e separe o que quiser
+                  pedir</span
+                >
+              </div>
+            </div>
+            <div class="passo">
+              <span class="passo-numero">2</span>
+              <div class="passo-texto">
+                <span class="passo-titulo">Fale pelo WhatsApp</span>
+                <span class="passo-descricao">
+                  Toque no botão verde — a mensagem já vai pronta, é só
+                  enviar</span
+                >
+              </div>
+            </div>
+            <div class="passo">
+              <span class="passo-numero">3</span>
+              <div class="passo-texto">
+                <span class="passo-titulo">Combine prazo e entrega</span>
+                <span class="passo-descricao"
+                  >A gente combina com você o prazo e a forma de entrega, sem
+                  complicação</span
+                >
+              </div>
+            </div>
+            <div class="passo">
+              <span class="passo-numero">4</span>
+              <div class="passo-texto">
+                <span class="passo-titulo">Confirme e aguarde</span>
+                <span class="passo-descricao"
+                  >Confirmamos tudo com você e preparamos seu pedido com todo
+                  cuidado</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="encomendas-info">
+            <div class="info-linha">
+              <span class="info-icone">💳</span>
+              <span class="info-label">Pagamento</span>
+              <span class="info-traco">—</span>
+              <span class="info-valor">Pix, dinheiro ou cartão</span>
+            </div>
+            <div class="info-linha">
+              <span class="info-icone">⏰</span>
+              <span class="info-label">Prazo mínimo</span>
+              <span class="info-traco">—</span>
+              <span class="info-valor">Em confirmação com o cliente</span>
+            </div>
+            <div class="info-linha">
+              <span class="info-icone">📍</span>
+              <span class="info-label">Entrega</span>
+              <span class="info-traco">—</span>
+              <span class="info-valor"
+                >Entregamos em toda Toledo, exceto a região do Biopark</span
+              >
+            </div>
+          </div>
+          <button class="botao-encomenda">
+            💬 Fazer minha encomenda agora
+          </button>
+          <span class="encomenda-aviso"
+            >Vamos te redirecionar para o WhatsApp — é rapidinho</span
+          >
+        </div>
+      </section>
+
+      <section id="horarios" class="horarios secoes-principais">
+        <div class="container horarios-container">
+          <div class="horarios-header">
+            <span class="tag-titulo">HORÁRIOS</span>
+            <h1 class="secao-titulo">Quando estamos abertos</h1>
+          </div>
+          <div class="horarios-cards">
+            <div class="horario-card">
+              <div class="horario-cabecalho">
+                Unidade Dolce Delicias Alimentos
+              </div>
+              <div class="horario-linha">
+                <span class="horario-dia">Segunda a Sexta</span>
+                <span class="horario-hora">07h00 às 17h00</span>
+              </div>
+              <div class="horario-linha">
+                <span class="horario-dia">Sábado</span>
+                <span class="horario-pill">Somente por entrega</span>
+              </div>
+              <div class="horario-linha">
+                <span class="horario-dia fechado">Domingo</span>
+                <span class="horario-fechado">✕ Fechado</span>
+              </div>
+            </div>
+            <div class="horario-card">
+              <div class="horario-cabecalho">
+                Unidade Dolce Delícias Lancheira Feliz
+              </div>
+              <div class="horario-linha">
+                <span class="horario-dia">Segunda a Sexta</span>
+                <span class="horario-hora"
+                  >09h00 às 12h30 | 13h30 às 18h30</span
+                >
+              </div>
+              <div class="horario-linha">
+                <span class="horario-dia">Sábado</span>
+                <span class="horario-pill">Somente por entrega</span>
+              </div>
+              <div class="horario-linha">
+                <span class="horario-dia fechado">Domingo</span>
+                <span class="horario-fechado">✕ Fechado</span>
+              </div>
+            </div>
+          </div>
+          <span class="horarios-aviso"
+            >⚠ Em feriados, o horário pode mudar — confirme rapidinho pelo
+            WhatsApp.</span
+          >
+        </div>
+      </section>
+
+      <section id="duvidas" class="duvidas secoes-principais">
+        <div class="container duvidas-container">
+          <div class="duvidas-header">
+            <span class="tag-titulo">DÚVIDAS</span>
+            <h1 class="secao-titulo">Perguntas que mais recebemos</h1>
+            <span class="subtitulo"
+              >Tudo que você precisa saber antes de pedir.</span
+            >
+          </div>
+          <div class="perguntas-container">
+            <details class="pergunta" open>
+              <summary>Vocês entregam em toda Toledo?</summary>
+              <p>
+                Entregamos em toda Toledo, com uma exceção: a região do Biopark.
+                Me chama no WhatsApp que confirmo rapidinho se sua casa está na
+                nossa área.
+              </p>
+            </details>
+            <details class="pergunta">
+              <summary>Qual o prazo mínimo para encomendar?</summary>
+              <p>
+                Pedimos pelo menos 48 horas de antecedência. Se for festa ou kit
+                grande, me chama com uns 3 dias de folga — assim garanto tudo
+                fresquinho e no capricho.
+              </p>
+            </details>
+            <details class="pergunta">
+              <summary>Quais formas de pagamento vocês aceitam?</summary>
+              <p>
+                Aceitamos Pix, dinheiro e cartão (débito ou crédito). A gente
+                combina a forma certinha na hora de confirmar seu pedido.
+              </p>
+            </details>
+            <details class="pergunta">
+              <summary>Os congelados já vêm prontos para consumo?</summary>
+              <p>
+                Vêm crus, prontos pra ir direto na fritadeira ou no forno. A
+                gente manda as instruções juntinho com o pedido, então não tem
+                erro.
+              </p>
+            </details>
+            <details class="pergunta">
+              <summary>Fazem kits para festas infantis?</summary>
+              <p>
+                Fazemos sim! Montamos kits para festa infantil com doces,
+                salgados e itens decorados — do seu jeitinho. Me chama no
+                WhatsApp que a gente monta certinho pro tamanho da sua festa.
+              </p>
+            </details>
+            <details class="pergunta">
+              <summary>Como acompanho meu pedido após confirmar?</summary>
+              <p>
+                Depois que o pedido é confirmado, a gente mantém contato com
+                você pelo WhatsApp e avisa assim que ele sair pra entrega. Você
+                não precisa ficar perguntando.
+              </p>
+            </details>
+          </div>
+          <div class="duvidas-cta">
+            <span class="duvidas-cta-texto">Não achou sua resposta aqui?</span>
+            <span class="duvidas-cta-link"
+              >Fale com a gente pelo WhatsApp →</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-topo">
+          <div class="logo-container">
+            <img
+              src="img/dolce-delicias-logo.png"
+              alt="Dolce Delícias Logo - Footer"
+              class="logo-footer"
+            />
+            <span class="footer-slogan">Feito com amor, em Toledo.</span>
+          </div>
+          <div class="footer-main">
+            <aside class="navegacao">
+              <span class="footer-titulo">Navegação</span>
+              <nav>
+                <ul>
+                  <li><a href="#hero">Início</a></li>
+                  <li><a href="#nossa-historia">Nossa História</a></li>
+                  <li><a href="#produtos">Produtos</a></li>
+                  <li><a href="#unidades">Unidades</a></li>
+                  <li><a href="#encomendas">Encomendas</a></li>
+                  <li><a href="#horarios">Horários</a></li>
+                  <li><a href="#duvidas">Dúvidas</a></li>
+                </ul>
+              </nav>
+            </aside>
+            <aside class="contato">
+              <span class="footer-titulo">Contato</span>
+              <div class="whatsapp">
+                <span class="whatsapp-icone">💬</span>
+                <span class="whatsapp-numero">(45) 99806-4748</span>
+              </div>
+              <div class="icones">
+                <a
+                  href="https://www.instagram.com/dolcedeliciasoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  class="icone-social"
+                >
+                  <img
+                    src="img/icones/instagram-icone.png"
+                    class="instagram-icone"
+                    alt="Ícone do Instagram"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/dolcedeliciasoficial/"
+                  target="_blank"
+                  class="icone-social"
+                >
+                  <img
+                    src="img/icones/facebook-icone.png"
+                    class="facebook-icon"
+                    alt="Ícone do Facebook"
+                  />
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <hr />
+        <p class="direitos-autorais">
+          © 2026 Dolce Delícias. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/5545998064748" class="botao-whatsapp" target="_blank"
+      >💬</a
+    >
+
+    <script src="script.js"></script>
+  </body>
+</html>
