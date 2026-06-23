@@ -264,6 +264,45 @@ main {
   border-color: var(--laranja);
 }
 
+.tags-coloridas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 420px;
+}
+
+.tag-artesanal {
+  background-color: #fde4e4;
+  border-color: #ed1c24;
+  color: var(--vermelho-escuro);
+}
+
+.tag-entrega {
+  background-color: #e8f5e9;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+
+.tag-whatsapp {
+  background-color: #e3f2fd;
+  border-color: #25d366;
+  color: #1565c0;
+}
+
+.tag-festa {
+  background-color: #fff3e0;
+  border-color: #fba03c;
+  color: #e65100;
+}
+
+.tag-artesanal:hover,
+.tag-entrega:hover,
+.tag-whatsapp:hover,
+.tag-festa:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(44, 26, 14, 0.1);
+}
+
 /* Retrato da proprietária — destaque do hero */
 .container_foto-produtos {
   position: relative;
@@ -438,10 +477,15 @@ main {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .imagem-container img {
+  transform: scale(1.06);
 }
 
 .card .produto-informacoes {
-  padding: 16px 16px 8px;
+  padding: 16px 16px 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -490,6 +534,26 @@ main {
 .card .produto-preco-opcao strong {
   color: var(--vermelho);
   font-weight: 800;
+}
+
+.card .produto-footer {
+  margin-top: auto;
+  padding: 12px 16px 16px;
+  border-top: 1px solid var(--cinza-borda);
+  background-color: var(--creme);
+  border-radius: 0 0 16px 16px;
+}
+
+.card .produto-footer .produto-preco {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--vermelho);
+}
+
+.card .produto-footer .produto-precos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /* Preço ainda não confirmado com o cliente */
@@ -603,10 +667,9 @@ main {
   background-color: white;
   border: 1px solid var(--cinza-borda);
   border-radius: 16px;
-  padding: 24px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 12px;
   transition:
     transform 0.25s,
     box-shadow 0.25s;
@@ -617,50 +680,43 @@ main {
   box-shadow: 0 16px 30px rgba(44, 26, 14, 0.12);
 }
 
-.unidade-nome {
-  font-size: 19px;
-  font-weight: 800;
-  color: var(--preto);
-}
-
-.unidade-info {
-  font-size: 14px;
-  color: var(--marrom-escuro);
-  line-height: 1.5;
-}
-
-.botao-unidade {
-  margin-top: 8px;
-  height: 48px;
-  background-color: var(--verde);
+.unidade-cabecalho {
+  background-color: var(--vermelho);
   color: white;
-  border: none;
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 800;
-  transition:
-    transform 0.2s,
-    filter 0.2s;
+  padding: 14px 18px;
 }
 
-.botao-unidade:hover {
-  cursor: pointer;
-  transform: translateY(-2px);
-  filter: brightness(1.05);
+.unidade-nome {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
 }
 
 .unidade-mapa {
   width: 100%;
   aspect-ratio: 16 / 10;
-  border-radius: 14px;
   overflow: hidden;
-  border: 2px solid var(--laranja);
+  border-top: 3px solid var(--laranja);
+  border-bottom: 3px solid var(--laranja);
 }
 
 .unidade-mapa iframe {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.unidade-rodape {
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.unidade-info {
+  font-size: 14px;
+  color: var(--marrom-escuro);
+  line-height: 1.5;
 }
 
 /* Encomendas */
@@ -690,18 +746,22 @@ main {
 
 .passos-lista {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 
 .passo {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   gap: 14px;
   background-color: white;
   border: 1px solid var(--cinza-borda);
   border-radius: 14px;
   padding: 18px;
+  text-align: center;
+  min-height: 200px;
+  justify-content: center;
 }
 
 .passo-numero {
@@ -722,6 +782,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 100%;
 }
 
 .passo-titulo {
@@ -1156,7 +1217,6 @@ footer hr {
 
 /*  Responsividade */
 
-/* Tablet */
 @media (max-width: 1024px) {
   .menu-navegacao li a {
     font-size: 14px;
@@ -1196,6 +1256,12 @@ footer hr {
   }
 }
 
+@media (max-width: 768px) {
+  .passos-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Celular */
 @media (max-width: 640px) {
   .hamburguer {
@@ -1230,5 +1296,9 @@ footer hr {
   .hero button,
   .botao-encomenda {
     width: 100%;
+  }
+
+  .passos-lista {
+    grid-template-columns: 1fr;
   }
 }
