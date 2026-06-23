@@ -47,12 +47,11 @@
               fresquinhos, com entrega em toda Toledo.
             </h2>
             <button>Quero fazer um pedido pelo WhatsApp</button>
-            <span class="ver-produtos">Ver o cardápio ↓</span>
-            <div class="tags">
-              <span class="tag">🍫 Artesanal</span>
-              <span class="tag">🚚 Entrega em Toledo</span>
-              <span class="tag">💬 Pedido pelo WhatsApp</span>
-              <span class="tag">🎉 Kits de Festa</span>
+            <div class="tags tags-coloridas">
+              <span class="tag tag-artesanal">🍫 Artesanal</span>
+              <span class="tag tag-entrega">🚚 Entrega em Toledo</span>
+              <span class="tag tag-whatsapp">💬 Pedido pelo WhatsApp</span>
+              <span class="tag tag-festa">🎉 Kits de Festa</span>
             </div>
           </div>
           <div class="container_foto-produtos">
@@ -120,91 +119,31 @@
         <div class="container produtos-container">
           <div class="produtos-header">
             <span class="tag-titulo">NOSSOS PRODUTOS</span>
-            <h1 class="secao-titulo">Escolha o seu favorito</h1>
+            <h1 class="secao-titulo">Uma provinha do que temos</h1>
             <span class="subtitulo"
-              >Feitos com ingredientes selecionados para a sua mesa.</span
+              >Esses são só alguns dos nossos produtos — quer ver tudo? O
+              cardápio completo está no WhatsApp.</span
             >
           </div>
           <div class="filtros-container">
             <button class="filtro-botao active" data-filtro="todos">
               Todos
             </button>
-            <button class="filtro-botao" data-filtro="doces">Doces</button>
             <button class="filtro-botao" data-filtro="salgados">
               Salgados
             </button>
             <button class="filtro-botao" data-filtro="lanches">Lanches</button>
-            <button class="filtro-botao" data-filtro="bebidas">Bebidas</button>
             <button class="filtro-botao" data-filtro="kits">
               Kits para Festa
             </button>
           </div>
 
           <div class="cards-container">
-            <div class="card card-destaque" data-categoria="doces">
-              <span class="selo-mais-pedido">⭐ O queridinho</span>
-              <div class="imagem-container">
-                <img
-                  src="img/produtos/brigadeiro-gourmet.jpg"
-                  alt="[Foto do Brigadeiro]"
-                />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Brigadeiro Gourmet</span>
-                <span class="produto-descricao">
-                  Brigadeiro recheado com Nutella e granulado belga
-                </span>
-                <span class="produto-preco">R$ 6,50 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card card-destaque" data-categoria="salgados">
-              <span class="selo-mais-pedido">⭐ O queridinho</span>
-              <div class="imagem-container">
-                <img
-                  src="img/produtos/coxinha-frango.jpg"
-                  alt="[Foto da Coxinha]"
-                />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Coxinha</span>
-                <span class="produto-descricao">
-                  Massa crocante com frango cremoso e catupiry
-                </span>
-                <span class="produto-preco">R$ 8,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card" data-categoria="salgados">
-              <div class="imagem-container">
-                <img src="img/produtos/pastel.jpg" alt="[Foto de Pastel]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Pastel</span>
-                <span class="produto-preco">R$ 15,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
             <div class="card" data-categoria="lanches">
               <div class="imagem-container">
                 <img
                   src="img/produtos/assado-calabresa.jpg"
-                  alt="[Foto de Misto Simples]"
+                  alt="Foto do Assado de Calabresa"
                 />
               </div>
               <div class="produto-informacoes">
@@ -212,37 +151,17 @@
                 <span class="produto-descricao"
                   >Pão, requeijão, queijo e presunto</span
                 >
+              </div>
+              <div class="produto-footer">
                 <span class="produto-preco">R$ 8,00 / unidade</span>
               </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
             </div>
-            <div class="card" data-categoria="bebidas">
-              <div class="imagem-container">
-                <img src="" alt="[Foto de Café Expresso]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Café Expresso</span>
-                <span class="produto-preco">R$ 6,99 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <!-- PENDÊNCIA: este card une 'Cento de Salgados (100un)' e 'Salgados Fritos' do material do cliente, que pareciam ser o mesmo item (mesmo preço) — confirmar -->
             <div class="card card-destaque" data-categoria="kits">
               <span class="selo-mais-pedido">⭐ O queridinho</span>
               <div class="imagem-container">
                 <img
                   src="img/produtos/kit-salgados.jpg"
-                  alt="[Foto de Kit de Salgados Fritos Sortidos]"
+                  alt="Foto do Kit de Salgados Fritos Sortidos"
                 />
               </div>
               <div class="produto-informacoes">
@@ -252,143 +171,38 @@
                   de carne, enroladinho de salsicha, trouxinha de presunto e
                   queijo e quibe</span
                 >
+              </div>
+              <div class="produto-footer">
                 <span class="produto-preco">R$ 85,00 / 100 unidades</span>
               </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card" data-categoria="doces">
-              <div class="imagem-container">
-                <img src="" alt="[Foto de Fatia de Bolo]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Fatia de Bolo</span>
-                <span class="produto-preco">R$ 4,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
             </div>
             <div class="card" data-categoria="salgados">
               <div class="imagem-container">
                 <img
                   src="img/produtos/esfilha-frango.jpg"
-                  alt="[Foto de Esfiha de Frango]"
+                  alt="Foto da Esfiha de Frango"
                 />
               </div>
               <div class="produto-informacoes">
                 <span class="produto-nome">Esfiha de Frango</span>
+              </div>
+              <div class="produto-footer">
                 <span class="produto-preco">R$ 9,00 / unidade</span>
               </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card" data-categoria="lanches">
-              <div class="imagem-container">
-                <img src="" alt="[Foto de Hambúrguer Duplo]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Hambúrguer Duplo</span>
-                <span class="produto-preco">R$ 16,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card" data-categoria="bebidas">
-              <div class="imagem-container">
-                <img src="" alt="[Foto de Suco de Morango]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Suco de Morango</span>
-                <span class="produto-preco">R$ 8,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
             </div>
             <div class="card" data-categoria="kits">
               <div class="imagem-container">
                 <img
                   src="img/produtos/mini-pizza.jpg"
-                  alt="[Foto de Mini Pizza]"
+                  alt="Foto de Mini Pizza"
                 />
               </div>
               <div class="produto-informacoes">
                 <span class="produto-nome">Mini Pizza</span>
+              </div>
+              <div class="produto-footer">
                 <span class="produto-preco">R$ 220,00 / 100 unidades</span>
               </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card" data-categoria="doces">
-              <div class="imagem-container">
-                <img src="" alt="[Foto de Brownie (Pedaço Grande)]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Brownie (Pedaço Grande)</span>
-                <span class="produto-preco">R$ 12,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card" data-categoria="bebidas">
-              <div class="imagem-container">
-                <img src="" alt="[Foto de Coca-Cola Lata]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Coca-Cola Lata</span>
-                <span class="produto-preco">R$ 6,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
-            </div>
-            <div class="card" data-categoria="kits">
-              <div class="imagem-container">
-                <img src="" alt="[Foto do Pirulito]" />
-              </div>
-              <div class="produto-informacoes">
-                <span class="produto-nome">Pirulito Colorido</span>
-                <span class="produto-descricao">
-                  Pirulito de chocolate decorado, perfeito para festas
-                </span>
-                <span class="produto-preco">R$ 4,00 / unidade</span>
-              </div>
-              <button class="botao-pedir">
-                <img
-                  src="./img/icone-mensagem.png"
-                  alt="Ícone de Mensagem"
-                />Pedir esse pelo WhatsApp
-              </button>
             </div>
           </div>
           <div class="botao-container">
@@ -410,7 +224,11 @@
 
           <div class="unidades-cards">
             <div class="unidade-card">
-              <span class="unidade-nome">Unidade Dolce Delicias Alimentos</span>
+              <div class="unidade-cabecalho">
+                <span class="unidade-nome"
+                  >Unidade Dolce Delicias Alimentos</span
+                >
+              </div>
               <div class="unidade-mapa">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.2905517777695!2d-53.7358584!3d-24.7169034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3bfe7f74ff1af%3A0x32e517393d9bb5b5!2sDolce%20Delicias%20Alimentos%20%7C%20Salgados%20para%20festas%20%7C!5e0!3m2!1spt-BR!2sbr!4v1782083288827!5m2!1spt-BR!2sbr"
@@ -422,18 +240,18 @@
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <span class="unidade-info"
-                >📍 Rua São João, 7408 - Jardim Gisela, Toledo - PR</span
-              >
-              <!-- <span class="unidade-info">🕘 Seg a Sex, das 7h às 17h</span> -->
-              <button class="botao-unidade">
-                Pedir nesta unidade pelo WhatsApp
-              </button>
+              <div class="unidade-rodape">
+                <span class="unidade-info"
+                  >📍 Rua São João, 7408 - Jardim Gisela, Toledo - PR</span
+                >
+              </div>
             </div>
             <div class="unidade-card">
-              <span class="unidade-nome"
-                >Unidade Dolce Delícias Lancheira Feliz</span
-              >
+              <div class="unidade-cabecalho">
+                <span class="unidade-nome"
+                  >Unidade Dolce Delícias Lancheira Feliz</span
+                >
+              </div>
               <div class="unidade-mapa">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.9095686964865!2d-53.74949780000001!3d-24.7299847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f395989b23a589%3A0xf4a5217758ff30a2!2sDolce%20Del%C3%ADcias%20Lancheira%20Feliz!5e0!3m2!1spt-BR!2sbr!4v1782083411554!5m2!1spt-BR!2sbr"
@@ -445,13 +263,11 @@
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <span class="unidade-info"
-                >📍 Rua Guarani, 2463 - Jardim La Salle, Toledo - PR</span
-              >
-              <!-- <span class="unidade-info">🕘 Seg a Sex, das 9h às 12:30h | 13:30h às 18:30</span> -->
-              <button class="botao-unidade">
-                Pedir nesta unidade pelo WhatsApp
-              </button>
+              <div class="unidade-rodape">
+                <span class="unidade-info"
+                  >📍 Rua Guarani, 2463 - Jardim La Salle, Toledo - PR</span
+                >
+              </div>
             </div>
           </div>
         </div>
