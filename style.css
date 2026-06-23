@@ -800,6 +800,21 @@ main {
   display: block;
 }
 
+.unidade-maps-btn {
+  display: block;
+  text-decoration: none;
+  color: var(--vermelho);
+  font-weight: bold;
+  border: 2px solid transparent;
+  margin-top: 10px;
+  align-self: flex-start;
+  transition: border-color 0.3s;
+}
+
+.unidade-maps-btn:hover {
+  border-bottom-color: var(--vermelho);
+}
+
 .unidade-rodape {
   padding: 14px 18px;
   display: flex;
