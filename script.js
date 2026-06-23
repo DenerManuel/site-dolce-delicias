@@ -96,31 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 4. Cards de produto - "Pedir esse produto"
-  document.querySelectorAll(".card .botao-pedir").forEach(function (botao) {
-    botao.addEventListener("click", function () {
-      var card = this.closest(".card");
-      var nomeProduto = card.querySelector(".produto-nome").textContent.trim();
-      abrirWhatsApp("Olá! Vi no site e quero pedir: " + nomeProduto);
-    });
-  });
-
-  // 5. Unidades - "Fazer pedido nesta unidade"
-  document
-    .querySelectorAll(".unidade-card .botao-unidade")
-    .forEach(function (botao) {
-      botao.addEventListener("click", function () {
-        var card = this.closest(".unidade-card");
-        var nomeUnidade = card
-          .querySelector(".unidade-nome")
-          .textContent.trim();
-        abrirWhatsApp(
-          "Olá! Quero fazer um pedido na " + nomeUnidade + " (vi pelo site)",
-        );
-      });
-    });
-
-  // 6. Encomendas - "Quero fazer uma encomenda"
+  // 4. Encomendas - "Quero fazer uma encomenda"
   var encomendaBtn = document.querySelector(".encomendas .botao-encomenda");
   if (encomendaBtn) {
     encomendaBtn.addEventListener("click", function () {
@@ -130,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 7. Dúvidas - "Fale com a gente pelo WhatsApp →"
+  // 5. Dúvidas - "Fale com a gente pelo WhatsApp →"
   var duvidasLink = document.querySelector(".duvidas-cta-link");
   if (duvidasLink) {
     duvidasLink.style.cursor = "pointer";
